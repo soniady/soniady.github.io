@@ -1,0 +1,20 @@
+
+      table, td, th {
+        border: 1px solid green;
+        border-collapse: collapse;
+        padding:5px;
+      }
+      th {
+        color:white;
+        background-color:green;
+        border: 1px solid white;
+      }
+      
+      td {
+        border:1px solid black;
+      }
+      
+      td:nth-child(3) {
+        text-align: center;
+      }
+    
