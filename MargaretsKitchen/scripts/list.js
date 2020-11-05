@@ -54,7 +54,11 @@ function Getbooking() {
         fetch(url, {
           method: 'DELETE',
         })
-        .then((response) => {    
+        .then((response) => {  
+            let table = document.getElementById("booking-list");
+            for(let i= 1; i < table.row.length; i++ ){
+                table.deleteRow(i);
+            }  
           GetBooking();
         });
             } else {
