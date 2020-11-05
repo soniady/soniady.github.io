@@ -4,22 +4,96 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+   @font-face{
+     font-family:"MyCustomFont";
+        src:url("https://www.w3schools.com/cssref/sansation_light.woff")
+}
+
+body {
+    background-color:coral;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSOPnWpY36T4uqMYwbz6-ncbkmS599Uu68eg&usqp=CAU");
+    background-repeat:repeat;
+    background-position:center;
+    padding-right:100px;
+     
+ }
+ 
+div {
+     font-size:20px;
+     font-family:MyCustomFont;
+   }
+   .normalFont {
+    font-weight:bold;
+}
+
+h1 { 
+   color:rgb(117,130,59);
+   text-decoration:overline underline;
+   text-align:center;
+   }
+
+h2 { 
+   color:rgb(117,130,59);
+   font-weight:200;
+   font-style:italic;
+   text-align:center;
+   border-color:#000000;
+   border-style:solid;
+   border-radius:25px;
+   box-shadow:10px 10px 5px grey;
+   text-shadow:2px 2px 2px black;
+  
+   }
+  
+}
+
+  img { 
+       display:block;
+       margin-left:auto;
+       margin-right:auto;
+       width:50%;
+
+}
+
+      a {
+   text-decoration:none;
+   color:blue;
+   font-style:italic;
+}
+
+a:hover { 
+     text-decoration:underline;
+     color:green;
+}
+
+a:visited {
+   text-decoration:line-through;
+   color:black;
+}
+
+}
+
+
+</style>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <script src="scripts/index.js"></script>
     <link ref="stylesheet" href="style.css">
-    
+        
     <title>Home-Margaret's Kitchen</title>
   </head>
   <body>
-      <div class="container-fluid">
+      <div class="container-fluid"> 
+       <div class="p-3 mb-2 bg-secondary text-white"></div>
+        
         <!--NavBar -->
         <div class="row">          
           <div class="col">
-               <nav class="navbar navbar-expand-lg navbar-light bg-danger">
-                  <a class="navbar-brand" href="#"><img src="https://assets.codepen.io/4530873/booking.svg" width="60" />
+                           <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+                  <a class="navbar-brand" href="#"><img src="https://cdn1.vectorstock.com/i/thumb-large/71/90/bakery-bakeshop-logo-or-label-woman-baker-vector-21517190.jpg" width="80" />
                     Margaret's Kitchen</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,8 +120,8 @@
           <div class="row">
             <div class="col">
               <div class="jumbotron">
-                 <h1 class="display-4">Everything we bake, we bake with Love.</h1>
-                <p class="lead">Great taste in every bite.Happiness starts here.</p>
+                   <h1 class="display-4">Everything we bake, we bake with Love.</h1>
+                <p class="lead">Great taste in every bite...Happiness starts here.</p>
                 <hr class="my-4">
                
                 <a class="btn btn-primary btn-lg" href="book.html" role="button">I'm ready,get me a piece of happiness!</a>
