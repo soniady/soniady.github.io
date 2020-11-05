@@ -13,11 +13,12 @@ function Getbooking() {
         var bookingIds = [];
       
       for (var i = 0; i < json.bookings.length; i++) {
-        var name = json.bookings[i].name;
-        var email = json.bookings[i].email;
-        var pax = json.bookings[i].pax;
-        var id = json.bookings[i].id;
-        var date = json.bookings[i].date;
+        var gName = json.bookings[i].name;
+        var gEmail = json.bookings[i].email;
+        var gPax = json.bookings[i].pax;
+        var gId = json.bookings[i].id;
+        var gRemarks = json.bookings[i].remarks;
+        var gDate = json.bookings[i].date;
         var buttonId = "delete" + id;
 
         let row = bookings.insertRow(bookings.rows.length);
@@ -25,8 +26,9 @@ function Getbooking() {
         row.insertCell(1).innerHTML = gName;
         row.insertCell(2).innerHTML = gEmail;
         row.insertCell(3).innerHTML = gPax;
-        row.insertCell(4).innerHTML = ""; //Remarks
-        row.insertCell(5).innerHTML = "<button id='" + buttonId + "' class='btn btn-danger'>Delete</button><br/>";
+        row.insertCell(4).innerHTML = gDate;
+        row.insertCell(5).innerHTML = gRemarks; //Remarks
+        row.insertCell(6).innerHTML = "<button id='" + buttonId + "' class='btn btn-danger'>Delete</button><br/>";
         
               
         bookings.innerHTML += "<button id='" + buttonId + "'>Delete</button><br/>";
